@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherActivity"
+    android:background="@color/grey_FitnessApp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fitnessApp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02"/>
+
+    <ImageButton
+        android:id="@+id/buttonBackWeather"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rectangle_rounded_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintVertical_bias="0.02"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/return_1"
+        app:layout_constraintStart_toStartOf="@id/buttonBackWeather"
+        app:layout_constraintTop_toTopOf="@id/buttonBackWeather"
+        app:layout_constraintEnd_toEndOf="@id/buttonBackWeather"
+        app:layout_constraintBottom_toBottomOf="@id/buttonBackWeather"/>
+
+    <TextView
+        android:id="@+id/current_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_weather"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-light"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/weatherCircle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.6"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city_weather"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/weatherCircle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <View
+        android:id="@+id/weatherCircle"
+        android:layout_width="354dp"
+        android:layout_height="354dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="#14BBF0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="@id/weatherCircle"
+        app:layout_constraintTop_toTopOf="@id/weatherCircle"
+        app:layout_constraintEnd_toEndOf="@id/weatherCircle"
+        app:layout_constraintBottom_toBottomOf="@id/weatherCircle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temperature_weather"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-light"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="@id/weatherCircle"
+        app:layout_constraintTop_toTopOf="@id/weatherCircle"
+        app:layout_constraintEnd_toEndOf="@id/weatherCircle"
+        app:layout_constraintBottom_toBottomOf="@id/weatherCircle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description_weather"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/weatherCircle"
+        app:layout_constraintTop_toTopOf="@id/weatherCircle"
+        app:layout_constraintEnd_toEndOf="@id/weatherCircle"
+        app:layout_constraintBottom_toBottomOf="@id/weatherCircle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.75" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotesActivity"
+    android:background="@color/grey_FitnessApp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fitnessApp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02"/>
+
+    <ImageButton
+        android:id="@+id/buttonBackNotes"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rectangle_rounded_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintVertical_bias="0.02"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/return_1"
+        app:layout_constraintStart_toStartOf="@id/buttonBackNotes"
+        app:layout_constraintTop_toTopOf="@id/buttonBackNotes"
+        app:layout_constraintEnd_toEndOf="@id/buttonBackNotes"
+        app:layout_constraintBottom_toBottomOf="@id/buttonBackNotes"/>
+
+    <View
+        android:id="@+id/addNote"
+        android:layout_width="370dp"
+        android:layout_height="236dp"
+        android:background="@drawable/rectangle_rounded_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.12"/>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_note"
+        android:paddingHorizontal="10dp"
+        android:onClick="Save"
+        android:textColor="@color/white"
+        android:background="@drawable/rectangle_rounded_all"
+        app:layout_constraintBottom_toTopOf="@id/BoxNotes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addNote"
+        app:layout_constraintHorizontal_bias="0.05" />
+
+    <Button
+        android:id="@+id/buttonDeleteAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_all_notes"
+        android:paddingHorizontal="10dp"
+        android:onClick="DeleteAll"
+        android:textColor="@color/white"
+        android:background="@drawable/rectangle_rounded_all"
+        app:layout_constraintBottom_toTopOf="@id/BoxNotes"
+        app:layout_constraintEnd_toStartOf="@id/buttonDelete"
+        app:layout_constraintStart_toEndOf="@id/buttonSave"
+        app:layout_constraintTop_toBottomOf="@id/addNote"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_note"
+        android:paddingHorizontal="20dp"
+        android:onClick="Delete"
+        android:textColor="@color/white"
+        android:background="@drawable/rectangle_rounded_all"
+        app:layout_constraintBottom_toTopOf="@id/BoxNotes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addNote"
+        app:layout_constraintHorizontal_bias="0.95" />
+
+    <View
+        android:id="@+id/BoxNotes"
+        android:layout_width="370dp"
+        android:layout_height="336dp"
+        android:background="@drawable/rectangle_rounded_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addNote"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_title"
+        app:layout_constraintStart_toStartOf="@id/addNote"
+        app:layout_constraintTop_toTopOf="@id/addNote"
+        app:layout_constraintEnd_toEndOf="@id/addNote"
+        app:layout_constraintBottom_toBottomOf="@id/addNote"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintVertical_bias="0.01"/>
+
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_note"
+        app:layout_constraintStart_toStartOf="@id/addNote"
+        app:layout_constraintTop_toTopOf="@id/addNote"
+        app:layout_constraintEnd_toEndOf="@id/addNote"
+        app:layout_constraintBottom_toBottomOf="@id/addNote"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.25"/>
+
+    <TextView
+        android:scrollbars = "vertical"
+        android:id="@+id/printNotes"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@id/BoxNotes"
+        app:layout_constraintEnd_toEndOf="@id/BoxNotes"
+        app:layout_constraintStart_toStartOf="@id/BoxNotes"
+        app:layout_constraintTop_toTopOf="@id/BoxNotes"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <!--    <TextView-->
+<!--        android:layout_width="202dp"-->
+<!--        android:layout_height="41dp"-->
+<!--        android:text="@string/add_note"-->
+<!--        android:textColor="#99000000"-->
+<!--        android:textSize="18sp"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="37dp"-->
+<!--        tools:layout_editor_absoluteY="95dp" />-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

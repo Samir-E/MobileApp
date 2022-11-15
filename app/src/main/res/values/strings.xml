@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="enter">Войти в FitnessApp</string>
+    <string name="fitnessApp">FitnessApp</string>
+    <string name="menu1">Шаги</string>
+    <string name="menu2"><b>1018</b>/10000</string>
+    <string name="menu3">Популярные фитнес-клубы</string>
+    <string name="menu4">Одевайтесь по погоде</string>
+    <string name="menu5">Сон</string>
+    <string name="menu6"><b>6</b> час.<b>15</b> мин.</string>
+    <string name="menu7">Как проходит ваш день?</string>
+    <string name="menu8">Каллории за день</string>
+    <string name="menu9"><b>500</b>/1900</string>
+    <string name="map">Ближайшие к вам фитнес–клубы:\n\t Pool&amp;Gym, фитнес–клуб с бассейном\n\t 4,7\n\t ул. Толстого, 17а, Красноярск, Красноярский край\n\t Открыто: 7:00 – 00:00\n\nАтлетик, спортклуб\n\t 4,6\n\t Красномосковская ул., 1А, Красноярск, Красноярский край\n\t Открыто: 7:00 – 23:00</string>
+    <string name="add_note">Добавить заметку</string>
+    <string name="add_title">Название</string>
+    <string name="save_note">Сохранить</string>
+    <string name="delete_all_notes">Удалить всё</string>
+    <string name="delete_note">Удалить</string>
+    <string name="date_weather">4 Марта</string>
+    <string name="city_weather">Красноярск</string>
+    <string name="temperature_weather">-4°С</string>
+    <string name="description_weather">Местами облачно</string>
+
+</resources>

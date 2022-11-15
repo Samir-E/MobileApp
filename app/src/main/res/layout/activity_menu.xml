@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="@color/grey_FitnessApp">
+
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rectangle_rounded_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintVertical_bias="0.02"
+       />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/return_1"
+        app:layout_constraintStart_toStartOf="@id/buttonBack"
+        app:layout_constraintTop_toTopOf="@id/buttonBack"
+        app:layout_constraintEnd_toEndOf="@id/buttonBack"
+        app:layout_constraintBottom_toBottomOf="@id/buttonBack"/>
+
+    <View
+        android:id="@+id/whiteBox1"
+        android:layout_width="370dp"
+        android:layout_height="125dp"
+        android:background="@drawable/rectangle_rounded_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <ImageButton
+        android:id="@+id/buttonToMap"
+        android:layout_width="370dp"
+        android:layout_height="64dp"
+        android:background="@drawable/rectangle_rounded_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/whiteBox1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.03"
+        />
+
+    <ImageButton
+        android:id="@+id/buttonToWeather"
+        android:layout_width="370dp"
+        android:layout_height="64dp"
+        android:background="@drawable/rectangle_rounded_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonToMap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.03"
+        />
+
+<!--    <View-->
+<!--        android:id="@+id/whiteBox3"-->
+<!--        android:layout_width="370dp"-->
+<!--        android:layout_height="64dp"-->
+<!--        android:background="@drawable/rectangle_rounded_white"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/buttonToMap"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintVertical_bias="0.03"/>-->
+
+    <View
+        android:id="@+id/whiteBox4"
+        android:layout_width="370dp"
+        android:layout_height="125dp"
+        android:background="@drawable/rectangle_rounded_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonToWeather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.04"/>
+
+    <ImageButton
+        android:id="@+id/buttonToNotes"
+        android:layout_width="370dp"
+        android:layout_height="64dp"
+        android:background="@drawable/rectangle_rounded_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/whiteBox4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.05"
+        />
+
+<!--    <View-->
+<!--        android:id="@+id/whiteBox5"-->
+<!--        android:layout_width="370dp"-->
+<!--        android:layout_height="64dp"-->
+<!--        android:background="@drawable/rectangle_rounded_white"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/whiteBox4"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintVertical_bias="0.05"/>-->
+
+    <View
+        android:id="@+id/whiteBox6"
+        android:layout_width="370dp"
+        android:layout_height="125dp"
+        android:background="@drawable/rectangle_rounded_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonToNotes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.12"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fitnessApp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02"/>
+
+    <TextView
+        android:id="@+id/textImage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/whiteBox1"
+        app:layout_constraintTop_toTopOf="@id/whiteBox1"
+        app:layout_constraintEnd_toEndOf="@id/whiteBox1"
+        app:layout_constraintBottom_toBottomOf="@id/whiteBox1"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <TextView
+        android:id="@+id/textLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu2"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/whiteBox1"
+        app:layout_constraintTop_toTopOf="@id/whiteBox1"
+        app:layout_constraintEnd_toEndOf="@id/whiteBox1"
+        app:layout_constraintBottom_toBottomOf="@id/whiteBox1"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintVertical_bias="0.65"/>
+
+    <TextView
+        android:id="@+id/textImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu3"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/buttonToMap"
+        app:layout_constraintTop_toTopOf="@id/buttonToMap"
+        app:layout_constraintEnd_toEndOf="@id/buttonToMap"
+        app:layout_constraintBottom_toBottomOf="@id/buttonToMap"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/textImage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu4"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/buttonToWeather"
+        app:layout_constraintTop_toTopOf="@id/buttonToWeather"
+        app:layout_constraintEnd_toEndOf="@id/buttonToWeather"
+        app:layout_constraintBottom_toBottomOf="@id/buttonToWeather"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/textImage4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu5"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/whiteBox4"
+        app:layout_constraintTop_toTopOf="@id/whiteBox4"
+        app:layout_constraintEnd_toEndOf="@id/whiteBox4"
+        app:layout_constraintBottom_toBottomOf="@id/whiteBox4"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/textLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu6"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/whiteBox4"
+        app:layout_constraintTop_toTopOf="@id/whiteBox4"
+        app:layout_constraintEnd_toEndOf="@id/whiteBox4"
+        app:layout_constraintBottom_toBottomOf="@id/whiteBox4"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <TextView
+        android:id="@+id/textImage5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu7"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/buttonToNotes"
+        app:layout_constraintTop_toTopOf="@id/buttonToNotes"
+        app:layout_constraintEnd_toEndOf="@id/buttonToNotes"
+        app:layout_constraintBottom_toBottomOf="@id/buttonToNotes"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/textImage6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu8"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/whiteBox6"
+        app:layout_constraintTop_toTopOf="@id/whiteBox6"
+        app:layout_constraintEnd_toEndOf="@id/whiteBox6"
+        app:layout_constraintBottom_toBottomOf="@id/whiteBox6"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/textLine3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu9"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/whiteBox6"
+        app:layout_constraintTop_toTopOf="@id/whiteBox6"
+        app:layout_constraintEnd_toEndOf="@id/whiteBox6"
+        app:layout_constraintBottom_toBottomOf="@id/whiteBox6"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shoe"
+        app:layout_constraintStart_toEndOf="@id/textImage1"
+        app:layout_constraintTop_toTopOf="@id/textImage1"
+        app:layout_constraintEnd_toEndOf="@id/whiteBox1"
+        app:layout_constraintBottom_toBottomOf="@id/textImage1"
+        app:layout_constraintHorizontal_bias="0.09" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sport"
+        app:layout_constraintStart_toEndOf="@id/textImage2"
+        app:layout_constraintTop_toTopOf="@id/textImage2"
+        app:layout_constraintEnd_toEndOf="@id/buttonToMap"
+        app:layout_constraintBottom_toBottomOf="@id/textImage2"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/weather"
+        app:layout_constraintStart_toEndOf="@id/textImage3"
+        app:layout_constraintTop_toTopOf="@id/textImage3"
+        app:layout_constraintEnd_toEndOf="@id/buttonToWeather"
+        app:layout_constraintBottom_toBottomOf="@id/textImage3"
+        app:layout_constraintHorizontal_bias="0.3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sleep"
+        app:layout_constraintStart_toEndOf="@id/textImage4"
+        app:layout_constraintTop_toTopOf="@id/textImage4"
+        app:layout_constraintEnd_toEndOf="@id/buttonToNotes"
+        app:layout_constraintBottom_toBottomOf="@id/textImage4"
+        app:layout_constraintHorizontal_bias="0.09"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/notes"
+        app:layout_constraintStart_toEndOf="@id/textImage5"
+        app:layout_constraintTop_toTopOf="@id/textImage5"
+        app:layout_constraintEnd_toEndOf="@id/buttonToNotes"
+        app:layout_constraintBottom_toBottomOf="@id/textImage5"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kcal"
+        app:layout_constraintStart_toEndOf="@id/textImage6"
+        app:layout_constraintTop_toTopOf="@id/textImage6"
+        app:layout_constraintEnd_toEndOf="@id/whiteBox6"
+        app:layout_constraintBottom_toBottomOf="@id/textImage6"
+        app:layout_constraintHorizontal_bias="0.2"/>
+
+    <View
+        android:id="@+id/grayLine1"
+        android:layout_width="200dp"
+        android:layout_height="8dp"
+        android:background="@drawable/rectangle_rounded_white"
+        android:backgroundTint="@color/lines"
+        app:layout_constraintStart_toEndOf="@id/textLine1"
+        app:layout_constraintTop_toTopOf="@id/textLine1"
+        app:layout_constraintEnd_toEndOf="@id/whiteBox1"
+        app:layout_constraintBottom_toBottomOf="@id/textLine1"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <View
+        android:id="@+id/grayLine2"
+        android:layout_width="200dp"
+        android:layout_height="8dp"
+        android:background="@drawable/rectangle_rounded_white"
+        android:backgroundTint="@color/lines"
+        app:layout_constraintStart_toEndOf="@id/textLine2"
+        app:layout_constraintTop_toTopOf="@id/textLine2"
+        app:layout_constraintEnd_toEndOf="@id/whiteBox4"
+        app:layout_constraintBottom_toBottomOf="@id/textLine2"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <View
+        android:id="@+id/grayLine3"
+        android:layout_width="200dp"
+        android:layout_height="8dp"
+        android:background="@drawable/rectangle_rounded_white"
+        android:backgroundTint="@color/lines"
+        app:layout_constraintStart_toEndOf="@id/textLine3"
+        app:layout_constraintTop_toTopOf="@id/textLine3"
+        app:layout_constraintEnd_toEndOf="@id/whiteBox6"
+        app:layout_constraintBottom_toBottomOf="@id/textLine3"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <View
+        android:layout_width="22dp"
+        android:layout_height="8dp"
+        android:background="@drawable/rectangle_rounded_left"
+        android:backgroundTint="@color/green"
+        app:layout_constraintStart_toStartOf="@id/grayLine1"
+        app:layout_constraintTop_toTopOf="@id/grayLine1"
+        app:layout_constraintBottom_toBottomOf="@id/grayLine1"/>
+
+    <View
+        android:layout_width="167dp"
+        android:layout_height="8dp"
+        android:background="@drawable/rectangle_rounded_left"
+        android:backgroundTint="@color/violet"
+        app:layout_constraintStart_toStartOf="@id/grayLine2"
+        app:layout_constraintTop_toTopOf="@id/grayLine2"
+        app:layout_constraintBottom_toBottomOf="@id/grayLine2"/>
+
+    <View
+        android:layout_width="55dp"
+        android:layout_height="8dp"
+        android:background="@drawable/rectangle_rounded_left"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintStart_toStartOf="@id/grayLine3"
+        app:layout_constraintTop_toTopOf="@id/grayLine3"
+        app:layout_constraintBottom_toBottomOf="@id/grayLine3"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
